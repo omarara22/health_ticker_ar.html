@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>شريط أخبار هيئة الصحة</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .ticker-container {
+      background: #006c74;
+      color: #fff;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: rtl;
+    }
+    .ticker-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-right 25s linear infinite;
+      font-size: 16px;
+    }
+    .ticker-container:hover .ticker-text {
+      animation-play-state: paused;
+    }
+    @keyframes scroll-right {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker-container">
+    <div class="ticker-text">
+      إعلان: سيتم إغلاق صالة مركز اسعاد المتعاملين يوم الجمعة للصيانة | حملة توعية صحية تبدأ الأسبوع القادم سيتم نشرها على صفحات هيئة الصحة بدبي الرسمية | ترقية نظام شريان الإلكتروني الأسبوع القادم
+    </div>
+  </div>
+</body>
+</html>
